@@ -1,0 +1,53 @@
+/* Dark base */
+body {
+  background-color: #0a0a0a !important;
+  color: #d6d6d6 !important;
+}
+
+/* Panels */
+div, .boxcontainer {
+  background-color: #111 !important;
+  border: 1px solid #300000 !important;
+}
+
+/* Links */
+a {
+  color: #ff4d4d !important;
+}
+
+a:hover {
+  color: #ff0000 !important;
+}
+
+/* Blood splatter overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url("https://i.imgur.com/8QfQZ6F.png");
+  background-repeat: repeat;
+  background-size: 500px;
+  opacity: 0.2;
+  z-index: 9999;
+}
+
+/* Buttons */
+button, .btn {
+  background-color: #1a0000 !important;
+  border: 1px solid #500000 !important;
+  color: #fff !important;
+}
+
+button:hover {
+  background-color: #330000 !important;
+}
+
+/* Optional spooky glow */
+h1, h2, h3 {
+  color: #ff2a2a !important;
+  text-shadow: 0 0 6px rgba(255,0,0,0.6);
+}
